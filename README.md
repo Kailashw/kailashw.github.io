@@ -4,9 +4,9 @@ A clean and simple portfolio template built using React, if want a template buil
 
 ## Preview
 
-[![Imgur](https://imgur.com/FwDMNEM.gif)](https://kailashw.github.io/cleanfolio)
+[![Imgur](https://imgur.com/FwDMNEM.gif)](https://kailashw.github.io)
 
-[See Live](https://kailashw.github.io/cleanfolio)
+[See Live](https://kailashw.github.io)
 
 ## Instructions
 
@@ -50,7 +50,7 @@ yarn start
 
 - Go to `package.json` file and replace -
 
-`"homepage": "https://kailashw.github.io/cleanfolio"`
+`"homepage": "https://kailashw.github.io"`
 
 with `"homepage": "https://yourusername.github.io"`.
 
