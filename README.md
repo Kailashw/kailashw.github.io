@@ -1,6 +1,6 @@
-# Cleanfolio
+# Personal Website
 
-A clean and simple portfolio template built using React, if want a template built with HTML, CSS and JS then check out [Cleanfolio Minimal](https://github.com/kailashw/kailashw.github.io).
+A clean and simple portfolio template built using React, if want a template built with HTML, CSS and JS then check out [Personal Website](https://github.com/kailashw/kailashw.github.io).
 
 ## Preview
 
