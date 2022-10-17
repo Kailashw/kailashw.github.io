@@ -21,28 +21,21 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    name: 'Leena.ai',
+    description: 'Building NextGen internal employee HRBP software.',
+    stack: ['NodeJS', 'RabbitMQ', 'Redis', 'MongoDB', 'AWS'],
   },
   {
-    name: 'Project 2',
+    name: 'Ellucian',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Streamlining integration between Student Information System (SIS) ERP and learning management system (LMS), Understanding, Structuring and Rebuilding application from Anguar 1.x version using ReactJS, Conducting peer code reviews to monitor the quality of code',
+    stack: ['NodeJS', 'PostgreSQL', 'React', 'AWS', 'Unit Testing'],
   },
   {
-    name: 'Project 3',
+    name: 'Kerv Digital (Formerly CloudThing)',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Writing reusable codes. Integrating reporting portal such as Power BI /Tableau. Making enhancements to RBAC (Role-based access control) using Python. ETL operation on MongoDB data to Salesforce, Building reusable boiler plates for front end using React.js, Setting up CI/CD jobs on Azure Devops, Writing generic utility libraries for different projects, Deploying codes on Azure VM/App Services.',
+    stack: ['Python', 'NodeJS', 'React', 'Azure', 'SQL Server', 'MongoDB'],
   },
 ]
 
