@@ -6,6 +6,10 @@
   transition: transform 0.2s linear;
 }
 
+li.description {
+  list-style-type: square;
+}
+
 .project:hover {
   transform: translateY(-7px);
 }

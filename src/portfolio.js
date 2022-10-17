@@ -25,7 +25,7 @@ const projects = [
     name: 'Leena.ai',
     description: [
       'At Leena, We are Building a better employee experience which assists employees the way Siri/Alexa do.We gather regular feedback from your employees across the lifecycle and get intelligent actionable insights. Make quick AI-driven decisions that impact engagement, action planning, performance, and innovation.',
-      'Writing Scalable projects.',
+      'Writing Scalable Code.',
     ],
     stack: ['NodeJS', 'RabbitMQ', 'Redis', 'MongoDB', 'AWS'],
   },
