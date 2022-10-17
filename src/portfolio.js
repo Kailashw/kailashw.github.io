@@ -22,19 +22,30 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Leena.ai',
-    description: 'Building NextGen internal employee HRBP software.',
+    description: [
+      'At Leena, We are Building a better employee experience which assists employees the way Siri/Alexa do.We gather regular feedback from your employees across the lifecycle and get intelligent actionable insights. Make quick AI-driven decisions that impact engagement, action planning, performance, and innovation.',
+      'Writing Scalable projects.',
+    ],
     stack: ['NodeJS', 'RabbitMQ', 'Redis', 'MongoDB', 'AWS'],
   },
   {
     name: 'Ellucian',
-    description:
-      'Streamlining integration between Student Information System (SIS) ERP and learning management system (LMS), Understanding, Structuring and Rebuilding application from Anguar 1.x version using ReactJS, Conducting peer code reviews to monitor the quality of code',
+    description: [
+      'Streamlining integration between Student Information System (SIS) ERP and learning management system (LMS)',
+      'Understanding, Structuring and Rebuilding application from Anguar 1.x version using ReactJS',
+      'Conducting peer code reviews to monitor the quality of code',
+    ],
     stack: ['NodeJS', 'PostgreSQL', 'React', 'AWS', 'Unit Testing'],
   },
   {
     name: 'Kerv Digital (Formerly CloudThing)',
-    description:
-      'Writing reusable codes. Integrating reporting portal such as Power BI /Tableau. Making enhancements to RBAC (Role-based access control) using Python. ETL operation on MongoDB data to Salesforce, Building reusable boiler plates for front end using React.js, Setting up CI/CD jobs on Azure Devops, Writing generic utility libraries for different projects, Deploying codes on Azure VM/App Services.',
+    description: [
+      'Writing reusable codes.',
+      'Integrating reporting portal such as Power BI /Tableau.',
+      'Making enhancements to RBAC (Role-based access control) using Python.',
+      'ETL operation on MongoDB data to Salesforce, Building reusable boiler plates for front end using React.js',
+      'Setting up CI/CD jobs on Azure Devops, Writing generic utility libraries for different projects, Deploying codes on Azure VM/App Services.',
+    ],
     stack: ['Python', 'NodeJS', 'React', 'Azure', 'SQL Server', 'MongoDB'],
   },
 ]
