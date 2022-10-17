@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://kailashw.github.io',
-  title: 'JS.',
+  title: '-KW',
 }
 
 const about = {
