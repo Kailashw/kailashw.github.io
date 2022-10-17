@@ -10,7 +10,8 @@ const about = {
   role: 'Full Stack Web Develoepr',
   description:
     'A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.',
-  resume: 'https://example.com',
+  resume:
+    'https://github.com/Kailashw/kailashw.github.io/blob/main/src/KailasWalldoddi.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/kailashw/',
     github: 'https://github.com/kailashw',
