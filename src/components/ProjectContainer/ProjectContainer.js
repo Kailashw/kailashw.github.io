@@ -6,7 +6,7 @@ import './ProjectContainer.css'
 const ProjectContainer = ({ project }) => (
   <div className='project'>
     <h3>{project.name}</h3>
-
+    <h4>{project.subTitle}</h4>
     {project.description && (
       <ul>
         {project.description.map((item) => (

@@ -23,31 +23,64 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Leena.ai',
+    subTitle: '(Feb 2022 - )',
     description: [
-      'At Leena, We are Building a better employee experience which assists employees the way Siri/Alexa do.We gather regular feedback from your employees across the lifecycle and get intelligent actionable insights. Make quick AI-driven decisions that impact engagement, action planning, performance, and innovation.',
-      'Writing Scalable Code.',
+      'Building Next gen AI powered HRBP software.',
+      'Integration of third party apps in to the application.',
+      'Writing Reusable, Scalable Code.',
+      'OnBoarding new customers, collect feedback from existing customer to improve the  efficiency.',
     ],
-    stack: ['NodeJS', 'RabbitMQ', 'Redis', 'MongoDB', 'AWS'],
+    stack: [
+      'NodeJS',
+      'React',
+      'RabbitMQ',
+      'Redis',
+      'MongoDB',
+      'AWS',
+      'Micro Services',
+    ],
   },
   {
     name: 'Ellucian',
+    subTitle: '(Mar 2020 - Dec 2021)',
     description: [
-      'Streamlining integration between Student Information System (SIS) ERP and learning management system (LMS)',
+      'Building Integration system between Student Information System (SIS) ERP and learning management system (LMS)',
       'Understanding, Structuring and Rebuilding application from Anguar 1.x version using ReactJS',
+      'Setting up CI/CD jobs using Jenkins & Deploying codes to AWS EC2, Lamda services.',
       'Conducting peer code reviews to monitor the quality of code',
+      'Certifying ILP product as tool IMS certified.',
     ],
-    stack: ['NodeJS', 'PostgreSQL', 'React', 'AWS', 'Unit Testing'],
+    stack: [
+      'NodeJS',
+      'PostgreSQL',
+      'React',
+      'AWS',
+      'Unit Testing',
+      'Angular',
+      'Micro Services',
+    ],
   },
   {
     name: 'Kerv Digital (Formerly CloudThing)',
+    subTitle: '(Oct 2016 - Mar 2020)',
     description: [
-      'Writing reusable codes.',
-      'Integrating reporting portal such as Power BI /Tableau.',
       'Making enhancements to RBAC (Role-based access control) using Python.',
-      'ETL operation on MongoDB data to Salesforce, Building reusable boiler plates for front end using React.js',
-      'Setting up CI/CD jobs on Azure Devops, Writing generic utility libraries for different projects, Deploying codes on Azure VM/App Services.',
+      'ETL operation on MongoDB data to Salesforce',
+      'Building reusable boiler plates for front end using React.js',
+      'Writing generic utility libraries for different projects',
+      'Setting up CI/CD jobs on Azure Devops & Deploying codes to Azure VM/App Services.',
+      'Integrating reporting portal such as Power BI /Tableau.',
     ],
-    stack: ['Python', 'NodeJS', 'React', 'Azure', 'SQL Server', 'MongoDB'],
+    stack: [
+      'Python',
+      'NodeJS',
+      'React',
+      'Azure',
+      'SQL Server',
+      'MongoDB',
+      'Micro Services',
+      'Monolith',
+    ],
   },
 ]
 
@@ -66,6 +99,8 @@ const skills = [
   'Git',
   'CI/CD',
   'Unit Testing',
+  'Micro Services',
+  'Monolith',
 ]
 
 const contact = {
