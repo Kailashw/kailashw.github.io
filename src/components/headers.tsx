@@ -1,8 +1,21 @@
+"use client";
 import { useTheme } from "@/context/ThemeContext";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
 export default function Header() {
   const { isDarkMode, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = [
+    { label: "Home", route: "/", icon: "🏠" },
+    { label: "Blogs", route: "/blogs", icon: "📝" },
+    { label: "Projects", route: "/projects", icon: "📁" },
+    { label: "Contact", route: "tel:+971528450177", icon: "📱" },
+  ];
+
+  const handleMenuItemClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-sm z-50 transition-all duration-300">
@@ -17,7 +30,7 @@ export default function Header() {
             }`}
           >
             <span className="transition-opacity duration-300" id="full-name">
-              K W
+              <Link href={'/'}> K W </Link>
             </span>
           </h1>
           <div className="flex items-center space-x-4">
@@ -53,56 +66,71 @@ export default function Header() {
                 </span>
               </div>
             </button>
-            <a
-              href="tel:+971528450177"
-              className={`${
-                isDarkMode
-                  ? "text-white hover:text-gray-200"
-                  : "text-gray-900 hover:text-gray-600"
-              } transition-colors group relative`}
-              aria-label="Call"
-            >
-              <div className="flex items-center space-x-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
-                <span className="absolute top-full left-1/2 -translate-x-1/2 bg-gray-900 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                  Call
-                </span>
-              </div>
-            </a>
-            <a
-              href="https://calendly.com/kailashw/30min?back=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${
-                isDarkMode
-                  ? "text-white hover:text-gray-200"
-                  : "text-gray-900 hover:text-gray-600"
-              } transition-colors group relative`}
-              aria-label="Book a Meeting"
-            >
-              <div className="flex items-center space-x-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="absolute top-full left-1/2 -translate-x-1/2 bg-gray-900 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                  Book a Meeting
-                </span>
-              </div>
-            </a>
+            <div className="relative">
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className={`${
+                  isDarkMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-900 hover:text-gray-600"
+                } transition-colors group relative`}
+              >
+                {isDarkMode ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="35"
+                    height="30"
+                    viewBox="0,0,256,256"
+                  >
+                    <g
+                      fill="#ffffff"
+                      stroke="none"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="35"
+                    height="30"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+                  </svg>
+                )}
+              </button>
+              {menuOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                  <ul
+                    className={`${
+                      isDarkMode
+                        ? "bg-gray-800 text-white"
+                        : "bg-white text-gray-900"
+                    }`}
+                  >
+                    {navItems.map((item) => (
+                      <li key={item.label}>
+                        <a
+                          href={item.route}
+                          onClick={handleMenuItemClick}
+                          className="flex items-center block px-4 py-2 hover:bg-gray-200"
+                        >
+                          <span className="mr-2">{item.icon}</span>
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
