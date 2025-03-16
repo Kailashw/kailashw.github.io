@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Kailas Walldoddi",
-  description: "Python | LLM | React JS | Node JS| Nest JS | Next JS | Cloud | AWS | Azure | GCP | Docker | Fast API | Flask | Express JS | Mongo DB | Postgres",
+  description:
+    "Python | LLM | React JS | Node JS| Nest JS | Next JS | Cloud | AWS | Azure | GCP | Docker | Fast API | Flask | Express JS | Mongo DB | Postgres",
 };
 
 export default function RootLayout({
@@ -25,13 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <ThemeProvider>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
     </ThemeProvider>
   );
 }
