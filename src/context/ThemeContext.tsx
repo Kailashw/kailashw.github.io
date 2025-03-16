@@ -1,9 +1,20 @@
 "use client";
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from "react";
 
-const ThemeContext = createContext();
+type ThemeContextType = {
+  isDarkMode: boolean;
+  toggleTheme: () => void;
+};
 
-export function ThemeProvider({ children }) {
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+
+export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
@@ -24,5 +35,10 @@ export function ThemeProvider({ children }) {
 }
 
 export function useTheme() {
-  return useContext(ThemeContext);
+  const context = useContext(ThemeContext);
+  // TypeScript check to ensure context is not undefined
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
 }

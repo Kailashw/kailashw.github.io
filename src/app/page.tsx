@@ -7,8 +7,9 @@ import TechStack from "@/components/technologies";
 import { useTheme } from "@/context/ThemeContext";
 import React from "react";
 
+
 export default function Home() {
-  const { isDarkMode } = useTheme();
+  const { isDarkMode} = useTheme();
 
   return (
     <div
