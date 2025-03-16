@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kailash Walldoddi - Personal Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website, built using **Next.js 13+**! This project showcases my work, skills, and experience as a **Senior Software Engineer**. It features a clean, modern design with support for **light and dark mode**.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 13+** (App Router)
+- **React & Tailwind CSS** (UI Styling)
+- **TypeScript** (For type safety)
+- **ESLint & Prettier** (Code Linting & Formatting)
+- **GitHub Actions** (CI/CD Workflow)
+
+## 📂 Project Structure
+
+```
+kailashw-kailashw.github.io/
+├── README.md
+├── LICENSE
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── public/                        # Static assets (e.g., images)
+├── src/
+│   ├── app/                       # Next.js app router pages
+│   │   ├── globals.css
+│   │   ├── layout.tsx             # Layout wrapper
+│   │   ├── page.tsx               # Homepage
+│   │   ├── blogs/page.tsx         # Blogs Page
+│   │   └── projects/page.tsx      # Projects Page
+│   ├── components/                # Reusable UI components
+│   │   ├── footer.tsx
+│   │   ├── headers.tsx
+│   │   ├── profileCard.tsx
+│   │   ├── quote.tsx
+│   │   └── technologies.tsx
+│   └── context/ThemeContext.tsx    # Global state management
+└── .github/workflows/nextjs.yml    # CI/CD pipeline
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🌙 **Dark/Light Mode**: Toggle between themes effortlessly
+- 📂 **Projects and Blogs Page**: Showcases my work (**Coming Soon!**)
+- 📜 **Dynamic Routing**: Uses the Next.js **App Router**
+- 📱 **Responsive Design**: Fully mobile-friendly UI
+- 🚀 **Fast & Optimized**: Next.js ensures great performance
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Installation & Setup
 
-## Learn More
+To run the project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+### 1️⃣ Clone the repository:
+```sh
+git clone https://github.com/kailashw/kailashw.github.io.git
+cd kailashw-kailashw.github.io
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2️⃣ Install dependencies:
+```sh
+yarn install  # or npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3️⃣ Start the development server:
+```sh
+yarn dev  # or npm run dev
+```
 
-## Deploy on Vercel
+Open **http://localhost:3000** in your browser to view the portfolio.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is deployed using **GitHub Pages**. To deploy manually, run:
+```sh
+yarn build # or npm run build
+```
+Then push the changes to the **`main`** branch.
+
+## 📌 TODO
+
+- [ ] Add blogs section 📝
+- [ ] Add Projects section 📝
+- [ ] Integrate a contact form or add newsletter functionality 📩
+- [ ] Improve animations and transitions ✨
+
+## 🛠️ Contributing
+
+Feel free to fork the project, open issues, or submit PRs if you'd like to contribute. 😊
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+⭐ **Thanks for checking out my portfolio!** If you like it, feel free to star the repo! 🚀
+
